@@ -1,27 +1,18 @@
-import { useEffect } from "react"
-import axios from "axios"
+import { Route, Routes } from "react-router-dom"
+import Homepage from "./pages/Homepage"
+import About from "./pages/About"
+import Features from "./pages/Features"
+import PageNotFound from "./pages/PageNotFound"
 
 const App = () => {
 
-  const test = async () => {
-
-    try {
-      const { data } = await axios.get("/api/v1/test")
-      console.log(data)
-    }
-    catch (error) {
-      console.log(error)
-    }
-  }
-
-  useEffect(() => {
-    test()
-  }, [])
-
   return (
-    <div>
-      Open console
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/features" element={<Features />} />
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
   )
 }
 
