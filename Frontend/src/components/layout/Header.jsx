@@ -18,7 +18,7 @@ const authNavigationItems = [
 
 const Header = () => {
 
-    const auth = true // * For Authentication (We'll use context API)
+    const auth = false // * For Authentication (We'll use context API)
 
     const [activeTab, setActiveTab] = useState(window.location.pathname);
 
