@@ -1,13 +1,13 @@
-import Layout from "../components/layout/Layout"
+import Layout from "../../components/layout/Layout"
 
-const Features = () => {
+const Login = () => {
     return (
         <Layout>
             <div className="custom-padding text-3xl">
-                Features
+                Login
             </div>
         </Layout>
     )
 }
 
-export default Features
+export default Login

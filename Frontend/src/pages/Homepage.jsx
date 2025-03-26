@@ -1,8 +1,12 @@
+import Layout from "../components/layout/Layout"
+
 const Homepage = () => {
     return (
-        <div className="text-3xl">
-            Homepage
-        </div>
+        <Layout>
+            <div className="custom-padding text-3xl">
+                Homepage
+            </div>
+        </Layout>
     )
 }
 
