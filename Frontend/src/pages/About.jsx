@@ -76,26 +76,26 @@ const About = () => {
                     <h2 className="text-3xl font-bold text-green-700 mb-8 text-center">Meet Our Team</h2>
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {[
-                                {
-                                    name: "Swedeshna Mishra",
-                                    role: "Frontend Developer",
-                                    img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
-                                },
-                                {
-                                    name: "Saumyajeet Varma",
-                                    role: "Frontend Developer",
-                                    img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
-                                },
-                                {
-                                    name: "Priyanshu Kumar Anand",
-                                    role: "Backend Developer",
-                                    img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
-                                },
-                                {
-                                    name: "Janmanjey Panigrahi",
-                                    role: "Backend Developer",
-                                    img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
-                                }
+                            {
+                                name: "Swedeshna Mishra",
+                                role: "Frontend Developer",
+                                img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
+                            },
+                            {
+                                name: "Saumyajeet Varma",
+                                role: "Frontend Developer",
+                                img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
+                            },
+                            {
+                                name: "Priyanshu Kumar Anand",
+                                role: "Backend Developer",
+                                img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
+                            },
+                            {
+                                name: "Janmanjey Panigrahi",
+                                role: "Backend Developer",
+                                img: "https://api.dicebear.com/9.x/thumbs/svg?seed=Aneka"
+                            }
                         ].map(({ name, role, img }) => (
                             <div key={name} className="bg-white shadow-md p-6 rounded-xl text-center">
                                 <img src={img} alt={name} className="w-24 h-24 mx-auto rounded-full mb-4" />

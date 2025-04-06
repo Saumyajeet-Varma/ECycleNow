@@ -137,7 +137,7 @@ const CompanyRegister = () => {
                         </button>
                     </div>
                 </form>
-                <p className="text-center mt-2 text-gray-600">Already have an account ? <a href="/company/login" className="text-green-600 font-semibold underline">Login</a></p>
+                <p className="text-center mt-2 text-gray-600">Already have an account ? <a href="/login/company" className="text-green-600 font-semibold underline">Login</a></p>
             </div>
         </Layout>
     )

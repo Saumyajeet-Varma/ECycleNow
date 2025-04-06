@@ -66,7 +66,7 @@ const UserLogin = () => {
                         </button>
                     </div>
                 </form>
-                <p className="text-center mt-2 text-gray-600">Doesn&apos;t have an account ? <a href="/user/register" className="text-green-600 font-semibold underline">Register</a></p>
+                <p className="text-center mt-2 text-gray-600">Doesn&apos;t have an account ? <a href="/register/user" className="text-green-600 font-semibold underline">Register</a></p>
             </div>
         </Layout>
     )

@@ -1,3 +1,5 @@
+import { FaBrain, FaRecycle } from "react-icons/fa"
+import { FaEarthAmericas } from "react-icons/fa6"
 import Layout from "../components/layout/Layout"
 
 const Homepage = () => {
@@ -9,11 +11,11 @@ const Homepage = () => {
                     <div className="z-10 relative">
                         <h1 className="text-4xl md:text-6xl font-bold">Recycle Smarter, Live Greener</h1>
                         <p className="text-lg mt-4 max-w-2xl mx-auto">
-                            Join ECycleNow – India’s most trusted platform to recycle electronic waste responsibly and earn eco-rewards.
+                            Join ECycleNow &ndash; India&apos;s most trusted platform to recycle electronic waste responsibly and earn eco-rewards.
                         </p>
                         <div className="mt-8">
                             <a
-                                href="/signup"
+                                href="/register"
                                 className="bg-white text-green-800 px-6 py-3 font-semibold rounded-full hover:bg-gray-200 transition"
                             >
                                 Get Started
@@ -31,7 +33,7 @@ const Homepage = () => {
                     </p>
                     <div className="mt-8">
                         <a
-                            href="/recycle"
+                            href="/register"
                             className="bg-green-700 text-white px-8 py-3 font-semibold rounded-full hover:bg-green-600 transition"
                         >
                             Schedule Your First Pickup
@@ -61,11 +63,11 @@ const Homepage = () => {
                                     link: "/blog/circular-economy"
                                 }
                             ].map(({ title, desc, link }) => (
-                                <div key={title} className="bg-green-50 p-6 rounded-xl shadow-md">
+                                <div key={title} className="bg-green-50 p-6 rounded-xl shadow-md flex flex-col">
                                     <h3 className="text-xl font-semibold text-green-800 mb-2">{title}</h3>
-                                    <p className="text-gray-700 mb-4">{desc}</p>
+                                    <p className="text-gray-700 mb-4 flex-grow">{desc}</p>
                                     <a href={link} className="text-green-700 font-semibold hover:underline">
-                                        Read more →
+                                        Read more &rarr;
                                     </a>
                                 </div>
                             ))}
@@ -97,23 +99,23 @@ const Homepage = () => {
                         <div className="grid md:grid-cols-3 gap-8 text-left">
                             {[
                                 {
-                                    icon: "♻️",
+                                    icon: <FaRecycle size={32} />,
                                     title: "Environmental Impact",
                                     desc: "Improper e-waste disposal leads to soil and water contamination due to hazardous chemicals."
                                 },
                                 {
-                                    icon: "🧠",
+                                    icon: <FaBrain size={32} />,
                                     title: "Health Hazards",
                                     desc: "Toxic materials like lead and mercury can cause severe neurological and respiratory issues."
                                 },
                                 {
-                                    icon: "🌍",
+                                    icon: <FaEarthAmericas size={32} />,
                                     title: "Global Crisis",
                                     desc: "India is one of the top e-waste producers. Public awareness is key to managing this crisis sustainably."
                                 }
                             ].map(({ icon, title, desc }) => (
                                 <div key={title} className="bg-green-100 p-6 rounded-xl shadow">
-                                    <div className="text-4xl mb-4">{icon}</div>
+                                    <div className="text-4xl mb-4 text-green-800">{icon}</div>
                                     <h3 className="text-xl font-semibold text-green-800 mb-2">{title}</h3>
                                     <p className="text-gray-700">{desc}</p>
                                 </div>
